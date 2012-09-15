@@ -50,6 +50,10 @@ a:hover{
 	color: #008e52;
 }
 
+#sub_content h2{
+	font-size: 24px;
+}
+
 #form_header{
 	margin-bottom: 1em;
 	font-size: 20px;
