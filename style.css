@@ -9,14 +9,30 @@
 	float:left;
 }
 
+#sub_content{
+	background-color: #e5e5e5;
+	width: 70%;
+}
+
 #sidebar_2{
 	width: 19%;
 	float: left;
 }
 
 #comments{
-	border-style: solid;
-	border-width: 1px;
-	width: 200px;
-	height: 100px;
+	margin-top: 2em;
+}
+
+.title{
+
+}
+
+#form_header{
+	margin-top:2em;
+	font-size: 20px;
+}
+
+.stuff{
+	font-family: arial;
+	font-size: 16px;
 }
