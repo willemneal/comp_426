@@ -28,8 +28,13 @@
 }
 
 #form_header{
-	margin-top:2em;
+	margin-bottom: 1em;
 	font-size: 20px;
+}
+
+#comment_box{
+	width: 60%;
+	height: 5em;
 }
 
 .stuff{
