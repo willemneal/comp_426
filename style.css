@@ -1,0 +1,22 @@
+/*style.css*/
+#sidebar_1{
+	width: 20%;
+	float: left;
+}
+
+#content{
+	width: 60%;
+	float:left;
+}
+
+#sidebar_2{
+	width: 19%;
+	float: left;
+}
+
+#comments{
+	border-style: solid;
+	border-width: 1px;
+	width: 200px;
+	height: 100px;
+}
