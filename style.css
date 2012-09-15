@@ -1,4 +1,22 @@
 /*style.css*/
+#header{
+	position: relative;
+	margin: auto;
+	width: 100%;
+	height: 60px;
+}
+
+#title{
+	position: absolute;
+	left: 40%;
+}
+
+#login{
+	top: 30px;
+	position: absolute;
+	right: 0px;
+}
+
 #sidebar_1{
 	width: 20%;
 	float: left;
@@ -23,8 +41,13 @@
 	margin-top: 2em;
 }
 
-.title{
+a:link{
+	color: #333333;
+	text-decoration: none;
+}
 
+a:hover{
+	color: #008e52;
 }
 
 #form_header{
@@ -37,7 +60,8 @@
 	height: 8em;
 }
 
-.stuff{
+.right_sidebar{
+	height: 200px;
 	font-family: arial;
 	font-size: 16px;
 }
