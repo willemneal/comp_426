@@ -34,6 +34,7 @@
 
 #sidebar_2{
 	width: 19%;
+	border: 5px solid orange;
 	float: left;
 }
 
