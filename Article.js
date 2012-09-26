@@ -18,7 +18,6 @@
  	this.location = location;
  }
  Article.DAYINMS = 86400000;
- Article.prototype.isOld = function() {
- 	return this.date + 3 * this.DAYINMS < this.date.getTime();
+ Article.prototype.isOldThan = function(day) {//returns whether article is old.
+ 	return this.date + day * this.DAYINMS < this.date.getTime();
  }
-*/
