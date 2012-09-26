@@ -1,23 +1,24 @@
-/* News Article
+/* User
  * 
- * Contains info about each article
- * including: date, genre, title, 
- * author, location, source url.
+ * Contains info about each user
+ * including: username, first and last name, email
+ 	password.
  * 
- * example: var = new Article('URL',',"UNC Wins', date,
-  'author', 'sports', 'Chapel Hill, NC')
+ * 
+ * 
  * 
  */
- var Article = function (source,title, date, 
- 						author, genre, location) {
- 	this.source = source;
- 	this.title = title;
- 	this.date = date;
- 	this.author = author;
- 	this.genre = genre;
- 	this.location = location;
+ var User = function (username,fname, lname,
+ 						 email, pref) {
+ 	this.username = username;
+ 	this.fname = fname;
+ 	this.lname = lname;
+ 	this.email = email;
+ 	this.password = password;
+ 	if pref this.pref = pref;
+ 	
  }
- Article.DAYINMS = 86400000;
- Article.prototype.isOld = function() {//returns whether article is old.
- 	return this.date + 3 * this.DAYINMS < this.date.getTime();
+ Article.prototype.changePassword = function(newPassword) {
+ 	this.password = newPassword;
+ 	
  }
