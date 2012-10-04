@@ -7,9 +7,8 @@
  * 
  */
  var Pref = function (genres[],location,password) {
- 	this.location = username;
+ 	this.location = location;
  	this.genres[]= genres;
- 	this.lname = lname;
  	this.password = password;
  	
  }
