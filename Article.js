@@ -21,3 +21,4 @@
  Article.prototype.isOldThan = function(day) {//returns whether article is old.
  	return this.date + day * this.DAYINMS < this.date.getTime();
  }
+alert("hello");'
