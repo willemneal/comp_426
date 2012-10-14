@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset = "utf-8">
+	<title>The Chapel Hill Index</title>
+	<script type="text/javascript" src='http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js'></script>
+	
+	
+	<link rel=stylesheet href = "style.css" type="text/css">
+</head>
+<body>
+	<script type="text/javascript" src="jsonFlickrApi.js">	</script>
+	<script type="text/javascript" src="http://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=b9b323e4a9834ca9730868a4bcf7a72e&tags=UNC%2C+Chapel+Hill&sort=random&format=json&jsoncallback=jsonFlickrApi"></script>
+
+<div id = "wrapper">
+	<div id = "header">
+		<h1 id = "title"> The Chapel Hill Index</h1>
+		<a id = "login" href = "#">Login</a>
+	</div><!--header-->
+	<div id = "sidebar_1">
+		<h2> Links</h2>
+		<p><a href = "#">~~~~~~~~~~~~~</a><br>
+		<a href = "#">~~~~~~~~~~~~~</a><br>
+		<a href = "#">~~~~~~~~~~~~~</a><br>
+		<a href = "#">~~~~~~~~~~~~~</a><br>
+		<a href = "#">~~~~~~~~~~~~~</a></p>
+	</div><!--sidebar_1-->
+	<div id = "content">
+		<div id = "sub_content">
+		<form id = "comments">
+			<label id = "form_header">Say Something</label><br>
+			<textarea id = "comment_box"></textarea>
+			<input type = "submit" value = "submit">
+		</form>
+	</div><!--sub_content-->
+	</div><!--content-->
+	<div id = "sidebar_2">
+		<div class = "right_sidebar"> There would be a calendar right here</div>
+		<div class = "right_sidebar"> And a twitter feed below</div>
+		<div class = "right_sidebar"> Maybe something like craigs list down here</div>
+	</div><!--sidebar_2-->
+</div><!--wrapper-->
+</body>
+</html>
