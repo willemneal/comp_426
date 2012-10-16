@@ -25,8 +25,8 @@ function jsonFlickrApi(rsp) {
 		 s =  '<img alt="'+ photo.title + '"src="' + t_url + '"/>'  ;
 		 
 		 //prompt(this);
-		 $('body').css('background-image','url('+t_url+')');
-		 prompt($('body').css('background-image'));
+		 $('#flickr').text("<img src="+t_url+">");
+		 //prompt($('body').css('background-image'));
 		 //this tells the JavaScript to write
 		 //everything in variable "s" onto the page
 		 
