@@ -25,9 +25,22 @@ function jsonFlickrApi(rsp) {
 		 s =  '<img alt="'+ photo.title + '"src="' + t_url + '"/>'  ;
 		 
 		 //prompt(this);
-		 $('body').css('background-image','url('+t_url+')');
-		 prompt($('body').css('background-image'));
-		 //this tells the JavaScript to write
-		 //everything in variable "s" onto the page
+		 // $('body').attr("flickrpic",t_url);
+		 //alert("api called")
+		 $('#flickr').attr("src",t_url);
+		 //$('body').css('background-image','url('+t_url+')');
+		 //prompt($('body').css('background-image'));
 		 
 		}
+
+
+$(document).ready(function () {
+	$.getJSON("http://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=805470a8b0ea366a9acbc219cbe895cb&tags=University+of+North+Carolina+at+Chapel+Hill%2CUNC%2CBasketball%2Ctarheel%2Cdeandome&sort=interestingness-desc&format=json&jsoncallback=?",jsonFlickrApi)
+	$('#the_form').on('submit', function(e) {
+		var s = $('#the_form input[name="itemval"]').val().split(' ').join('+').split(',').join("%2C");
+		//alert(s);
+		$.getJSON("http://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=805470a8b0ea366a9acbc219cbe895cb&tags="+s+"&sort=interestingness-desc&format=json&jsoncallback=?",jsonFlickrApi)
+			e.preventDefault();
+	});
+});
+
