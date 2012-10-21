@@ -63,4 +63,15 @@ Article.push(new Article("http://www.theonion.com/articles/tommy-lee-jones-tells
 	"entertainment",
 	"NEW YORK",
 	"Prior to his appearance on Late Night With Jimmy Fallon last week, actor Tommy Lee Jones informed the host that he had no intention of playing “any of [his] little fucking games,” according to sources at NBC. “Listen here, Howdy Doody, I’m not putting on a wig, I’m not doing your skits, I’m not reading any Mötley Crüe lyrics, and I’m sure as shit not singing the Men In Black song with your goddamn band,” said the Oscar winner, who was on the show to promote his film Hope Springs. \"Here’s what’s gonna happen. I’m gonna walk out there, sit down, and tell you an amusing anecdote about my movie. Then you’re gonna roll the clip, thank me, and have a producer walk me to the elevator. That’s it. Nothing else. Zippo. I’m a 66-year-old man, for Christ’s sake. So you and your giddy little writing staff can just calm the fuck down.\""));
-Aricle.push(new Aricle()
+Aricle.push(new Aricle());
+
+
+Article.all.sort(function(a,b){
+	if (a.Date<b.Date){
+		return -1;
+	}else if (a.Date>b.Date){
+		return 1;
+	}else{
+		return 0;
+	}
+});
