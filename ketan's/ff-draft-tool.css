@@ -1,0 +1,174 @@
+
+#price-entry {
+  width: 3em;
+}
+
+#entry-div {
+  border: thin solid black;
+}
+
+#position-tabs {
+  float: left;
+%%  border: thin solid black;
+%%  height: 250px;
+}
+
+#position-tabs > div {
+  border-bottom: 1px dashed black;
+  padding-right: 5px;
+}
+
+#position-tabs > .selected {
+  background-color: #ffff00;
+  border-right: 5px solid black;
+}
+
+#player-info-div {
+  height: 250px;
+  overflow: auto;
+  border: thin solid black;
+}
+
+#player-info-div > div:nth-child(2n) {
+  background-color: #88cc88;
+}
+
+#roster-panel {
+  background-color: salmon;
+  float: right;
+  border: thin solid black;
+}
+
+.money {
+  text-align: right;
+}
+
+#roster-panel tbody tr:hover {
+  background-color: yellow;
+}
+
+#roster-panel thead th {
+  border-bottom: 2px solid salmon;
+}
+
+#roster-panel thead th:hover {
+  border-bottom: 2px solid gray;
+}
+
+#roster-panel thead th.sortcol {
+  border-bottom: 2px solid black;
+}
+
+#roster-owner {
+  border-bottom: 1px dashed grey;
+}
+
+#budget-info-panel table td:first-child {
+  border-right: thin solid black;
+  width: 55px;
+}
+
+#budget-info-panel table {
+  border-collapse: collapse;
+}
+
+#budget-info-panel table td {
+  width: 40px;
+  border-bottom: thin solid black;
+}
+
+#budget-info-panel col.budget-category {
+  background: #6495ed;
+}
+
+#budget-info-panel col.odd {
+  background: #eeeeee;
+}
+
+#budget-info-panel {
+  margin-top: 5px;
+}
+
+
+.vt {
+    border:0px solid red;
+    writing-mode:tb-rl;
+     filter: flipv fliph;
+    -webkit-transform:rotate(270deg);
+    -moz-transform:rotate(270deg);
+    -o-transform: rotate(270deg);
+    white-space:nowrap;
+    font-weight:bold;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.vt:hover {
+  background-color: yellow;
+}
+
+#log-panel div form {
+  display: inline;
+}
+
+#log-panel {
+  height: 150px;
+  overflow: auto;
+  border: thin solid black;
+}
+
+#log-panel > div {
+  height: 25px;
+  font-family: Helvetica, sans-serif;
+  font-size: 14pt;
+  border-bottom: thin dotted grey;
+
+}
+
+#log-panel > div.even {
+  background-color: #aaffaa;
+}
+
+.icon {
+  width: 10px;
+  height: 10px; 
+  vertical-align: middle;
+}
+
+.icon:hover {
+  width: 15px;
+  height: 15px;
+}
+
+#player-info-div .ranking {
+  float: left;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 36pt;
+  background-color: #d3d3d3;
+  border-radius: 10px;
+  margin: 3px;
+}
+
+#player-info-div .bio {
+  font-family: Copperplate, sans-serif;
+  font-size: 16pt;
+%%  margin-left: 100px;
+}
+
+#player-info-div .stats {
+  color: dimgrey;
+}
+
+#player-info-div .biostat {
+  font-weight: bold;
+}
+
+#player-info-div .stat-table {
+  width: 300px;
+  margin: auto;
+  border: thin solid red;
+}
+
+#player-info-div .auctioninfo {
+    height: 50px;
+}

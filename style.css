@@ -20,7 +20,6 @@
 #sidebar_1{
 	width: 20%;
 	float: left;
-	background-color: grey
 }
 
 #content{
@@ -37,7 +36,7 @@
 
 #sidebar_2{
 	width: 19%;
-	/*border: 5px solid orange;*/
+	border: 5px solid orange;
 	float: left;
 }
 
@@ -69,8 +68,7 @@ a:hover{
 }
 
 .right_sidebar{
-	height: 100px;
+	height: 200px;
 	font-family: arial;
 	font-size: 16px;
-	border: thin black line
 }

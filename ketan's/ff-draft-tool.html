@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Fantasy Football Draft Tool</title>
+    <link rel="stylesheet" type="text/css" href="ff-draft-tool.css">
+    <script type="text/javascript" src="jquery-1.8.1.js"></script>
+    <script type="text/javascript" src="Owner.js"></script>
+    <script type="text/javascript" src="Player.js"></script>
+    <script type="text/javascript" src="Team.js"></script>
+    <script type="text/javascript" src="StatLine.js"></script>
+    <script type="text/javascript" src="TransactionLog.js"></script>
+    <script type="text/javascript" src="setup.js"></script>
+    <script type="text/javascript" src="ffdraft.js"></script>
+  </head>
+
+  <body>
+    <div id="entry-div">
+      <form>
+        <select name="owner"> 
+        </select>
+        <select name="player">
+        </select>
+        <label>$ <input type="text" id="price-entry"></label>
+        <button type="submit">Record</button>
+      </form>
+    </div>
+
+   <div id="log-panel">
+   </div>
+
+    <div>
+      <div id="position-tabs">
+        <div class="ptab selected">QB</div>
+        <div class="ptab">RB</div>
+        <div class="ptab">WR</div>
+        <div class="ptab">TE</div>
+        <div class="ptab">K</div>
+        <div class="ptab">D</div>
+      </div>
+      <div id="player-info-div">
+      </div>
+    </div>
+    <div>
+      <div id="roster-panel">
+	      <div id="roster-owner"></div>
+        <div>
+          <table>
+            <thead>
+	           <tr><th>#</th>
+		             <th>Pos</th>
+		             <th class='sortcol'>Name</th>
+		             <th>Team</th>
+		             <th>Bye</th>
+		             <th>$</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+	        </table>
+	      </div>
+      </div>
+      <div id="budget-info-panel">
+	      <table>
+          <col class="budget-category">
+	        <thead>
+	          <tr>
+	            <td></td>
+            </tr>
+	        </thead>
+          <tbody>
+	         <tr><td>$</td></tr>
+	         <tr><td>Max</td></tr>
+	         <tr><td>QB %</td></tr>
+	         <tr><td>RB %</td></tr>
+	         <tr><td>WR %</td></tr>
+	         <tr><td>TE %</td></tr>
+	         <tr><td>K %</td></tr>
+	         <tr><td>D %</td></tr>
+	        </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>   
