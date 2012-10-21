@@ -26,6 +26,8 @@
 #content{
 	width: 60%;
 	float:left;
+	overflow: auto;
+	height:500px;
 }
 
 #sub_content{
