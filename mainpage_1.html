@@ -10,6 +10,7 @@
 	<script type="text/javascript" src="js/User.js"></script>
 	<script type="text/javascript" src="js/setup.js"></script>
 	<script type="text/javascript" src="js/mainpage.js"></script>
+	<script type="text/javascript" src="jsonFlickrApi.js"></script>
 </head>
 <body>
 <div id = "wrapper">
@@ -42,9 +43,15 @@
 		</form>
 	</div><!--content-->
 	<div id = "sidebar_2">
+
 		<div class = "right_sidebar"> There would be a calendar right here</div>
 		<div class = "right_sidebar"> And a twitter feed below</div>
 		<div class = "right_sidebar"> Maybe something like craigs list down here</div>
+		<img id="flickr">
+			<form id="the_form">
+				<label>Search Flickr (tags separated by commas): <input type="text" name="itemval"></label>
+				<button type="submit">Search</button>
+			</form>
 	</div><!--sidebar_2-->
 </div><!--wrapper-->
 </body>

@@ -13,6 +13,10 @@
 	var i = 0;
  }
 
+User.prototype.fullName = function(){
+	return this.first + " " + this.last;
+}
+
 User.prototype.addGenre = function(genre){
 	this.genres.push(genre);
 	this.likedGenres[genre.value] = i;

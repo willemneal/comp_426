@@ -22,4 +22,3 @@ Article.all.push(new Article('#', 'articleTwelve', '01/01/2001', 'authorTwelve',
 Article.all.push(new Article('#', 'articleThirteen', '01/01/2001', 'authorThirteen', 'academic'));
 Article.all.push(new Article('#', 'articleFourteen', '01/01/2001', 'authorFourteen', 'academic'));
 Article.all.push(new Article('#', 'articleFifteen', '01/01/2001', 'authorFifteen', 'academic'));
-
