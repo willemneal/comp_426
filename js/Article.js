@@ -11,25 +11,19 @@
  Consider views and shares
  */
  var Article = function (source, title, date, 
- 						author, genre, location) {
+ 						author, genre) {
  	this.source = source;
  	this.title = title;
  	this.date = date;
  	this.author = author;
  	this.genre = genre;
- 	this.location = location;
 
  	this.likes = 0;
  }
  Article.DAYINMS = 86400000;
 
-/*if a user in some way likes an article either by clicking a button or 
-just viewing the article then this is meant to make note of the article to the
-user's preferences*/
  Article.prototype.liked = function(){
 	this.likes++;
-/*Could make a like function from here such that when attach to user is called it 
-actually increments a like function*/
  };
  
  Article.prototype.disliked = function(){

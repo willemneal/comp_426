@@ -13,11 +13,15 @@
  Genre.all = {};
  Genre.all[sports] = new Genre('UNC athletics and sports','A category for UNC athletics
  	and sports information');
-Genre.all[classes] = new Genre('UNC classes','Basic class signup information or sakai
+Genre.all[academic] = new Genre('UNC classes','Basic class signup information or sakai
 	information');
-Genre.all[studyabroad] = new Genre('UNC Study Abroad','Some UNC study abroad information
+Genre.all[studyAbroad] = new Genre('UNC Study Abroad','Some UNC study abroad information
 	');
 Genre.all[career] = new Genre('UNC career information', 'information on career fairs,
 	resume building, etc');
+Genre.all[comedy] = new Genre('UNC comedic articles', 'Comedy on campus or comedic
+ articles related to UNC');
+Genre.all[housing] = new Genre('UNC housing information', 'General information or 
+ reports on housing for UNC');
 
  
