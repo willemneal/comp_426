@@ -4,7 +4,10 @@ $(document).ready(function () {
 	build_user_dropdown();
 	
 	});
-	
+	$("form").on('submit'){
+
+	}
+
 	var num_articles = 0;
 	var load_articles = function(User){
 	var likedArticles = new Array();
@@ -51,7 +54,7 @@ $(document).ready(function () {
 	}
 	}
 	var build_user_dropdown = function(){
-		var user_dropdown = $("form > select[name='user']");
+		var user_dropdown = $("#users > form > select[name='user']");
 		
 		for (var i = 0; i<User.all.length; i++){
 			var next_user = User.all[i];
