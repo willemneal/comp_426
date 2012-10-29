@@ -2,15 +2,45 @@ $(document).ready(function () {
 	alert('Init function');
 	
 	build_user_dropdown();
-	
+	load_first_articles();
 	});
-	$("form").on('submit'){
-
+	function usersFunction(){
+		alert("that");
+		var user = $(this).find("select[name='user']").find(":selected").data('user');
+		load_articles(user);
 	}
 
 	var num_articles = 0;
-	var load_articles = function(User){
-	var likedArticles = new Array();
+	var load_first_articles = function(){
+	 random_article1 = Article.all[Math.floor(Math.random()*Article.all.length)];
+	$('#sub_content').append("<h1>"+random_article1.title+"</h1>" + random_article1.author+"<div id='button-wrapper1'><form><button type = 'submit' onclick = 'clickFunction(random_article1.id); return false;'>like</button></form></div>");
+	 random_article2 = Article.all[Math.floor(Math.random()*Article.all.length)];
+	$('#sub_content').append("<h1>"+random_article2.title+"</h1>" + random_article2.author+"<div id='button-wrapper2'><form><button type = 'submit' onclick = 'clickFunction(random_article2.id); return false;'>like</button></form></div>");
+	 random_article3 = Article.all[Math.floor(Math.random()*Article.all.length)];
+	$('#sub_content').append("<h1>"+random_article3.title+"</h1>" + random_article3.author+"<div id='button-wrapper3'><form><button type = 'submit' onclick = 'clickFunction(random_article3.id); return false;'>like</button></form></div>");
+	 random_article4 = Article.all[Math.floor(Math.random()*Article.all.length)];
+	$('#sub_content').append("<h1>"+random_article4.title+"</h1>" + random_article4.author+"<div id='button-wrapper4'><form><button type = 'submit' onclick = 'clickFunction(random_article4.id); return false;'>like</button></form></div>");
+	/*
+		while(num_articles<4){
+			random_article = Article.all[Math.floor(Math.random()*Article.all.length)];
+			$('#sub_content').append("<h1>" + random_article.title+ "</h1>" + random_article.author + "<div id='button-wrapper'><form><button type = 'submit' onclick = 'clickFunction(random_article.id); return false;'>like</button></form></div>");
+			num_articles++;
+		}*/
+	};
+
+	function clickFunction(idRef){
+		alert(idRef);
+		for(i = 0; i<Article.all.length; i++){
+			if(Article.all[i].id==idRef){
+				Article.all[i].likes++;
+				alert(Article.all[i].likes);
+			}
+		}
+	}
+
+	var load_articles = function(){
+
+	/*var likedArticles = new Array();
 	var remainingArticles = new Array();
 	for(var i=0; i<Article.all.length; i++){
 		remainingArticles[i] = Article.all[i];
@@ -37,21 +67,10 @@ $(document).ready(function () {
 				}
 			}
 		}
-	}
+	}*/
 
 
-	while(num_articles<4){
-		while(num_articles<likedArticles.length){
-			$('#sub_content').append(likedArticles[num_articles].title);
-			num_articles++;
-		}
-		while(num_articles<remainingArticles.length){
-			$('#sub_content').append(remainingArticles[num_articles].title);
-		}
-		while(num_articles<dislikedArticles.length){
-			$('#sub_content').append(dislikedArticles[num_articles].title);	
-		}
-	}
+	
 	}
 	var build_user_dropdown = function(){
 		var user_dropdown = $("#users > form > select[name='user']");

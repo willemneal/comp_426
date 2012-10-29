@@ -11,12 +11,13 @@
  Consider views and shares
  */
  var Article = function (source, title, date, 
- 						author, genre) {
+ 						author, genre, id) {
  	this.source = source;
  	this.title = title;
  	this.date = date;
  	this.author = author;
  	this.genre = genre;
+ 	this.id = id;
 
  	this.likes = 0;
  }

@@ -7,9 +7,8 @@
  	this.email = email;
 
  	//a list of genres the user has liked
-	var root;
- 	this.genres = [];
-	this.likedGenres = [];
+ 	var dislikedGenres = new Array();
+	var likedGenres = new Array();
 	var i = 0;
  }
 
@@ -28,12 +27,10 @@ takes an article adds a like, and adds the articles genre to the user's genre li
 
 User.prototype.likeArticle = function(article){
 	article.liked();
-	addGenre(article.genre);
-	i++;
+	this.likedGenres.push(article.genre);
 };
  
  User.prototype.dislikeArticle = function(article){
 	article.disliked();
-	addGenre(article.genre);
-	i--;
+	this.dislikedGenres.push(article.genre);
  }
